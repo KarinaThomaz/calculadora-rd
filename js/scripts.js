@@ -4,99 +4,40 @@ btnLimpar.onclick = () => {
     visor.value = ''
 }
 
-let btnZero = document.querySelectorAll("0");
-let btnUm = document.querySelectorAll("1");
-let btnDois = document.querySelectorAll("2");
-let btnTres = document.querySelectorAll("3");
-let btnQuatro = document.querySelectorAll("4");
-let btnCinco = document.querySelectorAll("5");
-let btnSeis = document.querySelectorAll("6");
-let btnSete = document.querySelectorAll("7");
-let btnOito = document.querySelectorAll("8");
-let btnNove = document.querySelectorAll("9");
+let btnZero = document.querySelector('[value="0"]');
+let btnUm = document.querySelector('[value="1"]');
+let btnDois = document.querySelector('[value="2"]');
+let btnTres = document.querySelector('[value="3"]');
+let btnQuatro = document.querySelector('[value="4"]');
+let btnCinco = document.querySelector('[value="5"]');
+let btnSeis = document.querySelector('[value="6"]');
+let btnSete = document.querySelector('[value="7"]');
+let btnOito = document.querySelector('[value="8"]');
+let btnNove = document.querySelector('[value="9"]');
 
-let btnSoma = document.querySelectorAll("+");
-let btnSubtracao = document.querySelectorAll("-");
-let btnDivisao = document.querySelectorAll("/");
-let btnMultiplicacao = document.querySelectorAll("*");
-let btnIgual = document.querySelectorAll("=");
+let btnSoma = document.querySelector('[value="+"]');
+let btnSubtracao = document.querySelector('[value="-"]');
+let btnDivisao = document.querySelector('[value="/"]');
+let btnMultiplicacao = document.querySelector('[value="*"]');
+let btnIgual = document.querySelector('[value="="]');
+let btnPonto = document.querySelector('[value="."]');
 
+btnZero.onclick = () => visor.value += btnZero.value
+btnUm.onclick = () => visor.value += btnUm.value
+btnDois.onclick = () => visor.value += btnDois.value
+btnTres.onclick = () => visor.value += btnTres.value
+btnQuatro.onclick = () => visor.value += btnQuatro.value
+btnCinco.onclick = () => visor.value += btnCinco.value
+btnSeis.onclick = () => visor.value += btnSeis.value
+btnSete.onclick = () => visor.value += btnSete.value
+btnOito.onclick = () => visor.value += btnOito.value
+btnNove.onclick = () => visor.value += btnNove.value
+btnSoma.onclick = () => visor.value += btnSoma.value
+btnSubtracao.onclick = () => visor.value += btnSubtracao.value
+btnDivisao.onclick = () => visor.value += btnDivisao.value
+btnMultiplicacao.onclick = () => visor.value += btnMultiplicacao.value
+btnPonto.onclick = () => visor.value += btnPonto.value
 
-const novaString = () =>{
-
-   
-    btnUm.click(function() {
-     document.getElementById("textbox").value += '1';
-    });
-      
-    btnDois.click(function() {
-     document.getElementById("textbox").value += '2';
-    });
-      
-    btnTres.click(function() {
-     document.getElementById("textbox").value += '3';
-    });
-      
-    btnQuatro.click(function() {
-     document.getElementById("textbox").value += '4';
-    });  
-    
-    btnCinco.click(function() {
-     document.getElementById("textbox").value += '5';
-    }); 
-      
-    btnSeis.click(function() {
-     document.getElementById("textbox").value += '6';
-    }); 
-      
-    btnSete.click(function() {
-     document.getElementById("textbox").value += '7';
-    }); 
-      
-    btnOito.click(function() {
-     document.getElementById("textbox").value += '8';
-    }); 
-      
-    btnNove.click(function() {
-     document.getElementById("textbox").value += '9';
-    }); 
-      
-    btnZero.click(function() {  document.getElementById("textbox").value += '0';
-    }); 
-      
-    btnPonto.click(function() {  document.getElementById("textbox").value += '.';
-    });
-      
-      
-    $("#plus").click(function() {
-     document.getElementById("textbox").value += ' + ';
-    });
-      
-    $("#minus").click(function() {
-     document.getElementById("textbox").value += ' - ';
-    });
-      
-    $("#multiply").click(function() {
-     document.getElementById("textbox").value += ' * ';
-    });
-      
-    $("#divide").click(function() {
-     document.getElementById("textbox").value += ' / ';
-    });
-      
-    $("#modulus").click(function() {
-     document.getElementById("textbox").value += ' % ';
-    });
-      
-      
-    $("#equals").click(function() {
-     document.getElementById("textbox").value =  eval(document.getElementById("textbox").value);
-    });  
-      
-    $("#clear").click(function() {
-     document.getElementById("textbox").value =  '';
-    });   
-      
-      
-      
-    }
+btnIgual.onclick = () => {
+    visor.value = eval(visor.value)
+}
