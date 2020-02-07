@@ -1,3 +1,2 @@
 # calculadora-rd
-Karina
-Ronaldo
+Projeto calculadora-rd desenvolvido por Karina e Ronaldo
