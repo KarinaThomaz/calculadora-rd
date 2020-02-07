@@ -1,6 +1,7 @@
 table {
     border: 1px solid black;
-    padding: 25px 10px;
+    border-radius: 25px;
+    padding: 25px 10px 10px;
     background-color: darkgrey;
     position: absolute;
     top: 50%;
@@ -27,7 +28,7 @@ input {
     width: 210px;
     margin: 2px;
     font-size: 25px;
-    padding: 7px;
+    padding: 10px 7px;
     border: 1px solid black;
     color: #fff;
     text-align: right;
