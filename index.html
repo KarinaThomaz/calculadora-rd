@@ -6,14 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Calculadora JS</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 
 <body>
 
-    <div class="container center-align">
-        <table class="bg-success text-white">
+    <div>
+        <table>
             <thead>
                 <tr>
                     <th colspan="4"><input type="text" readonly value="0000"></th>
@@ -21,48 +20,40 @@
             </thead>
             <tbody>
                 <tr>
-                    <td><button class="bg-secondary">(</button></td>
-                    <td><button class="bg-secondary">)</button></td>
-                    <td><button class="bg-secondary">%</button></td>
-                    <td><button class="bg-danger">CE</button></td>
+                    <td><button value="(" >(</button></td>
+                    <td><button value=")">)</button></td>
+                    <td><button value="%">%</button></td>
+                    <td><button value="CE" class="btnRed">CE</button></td>
                 </tr>
                 <tr>
-                    <td><button class="bg-secondary">7</button></td>
-                    <td><button class="bg-secondary">8</button></td>
-                    <td><button class="bg-secondary">9</button></td>
-                    <td><button class="bg-secondary">/</button></td>
+                    <td><button value="7">7</button></td>
+                    <td><button value="8">8</button></td>
+                    <td><button value="9">9</button></td>
+                    <td><button value="/">/</button></td>
                 </tr>
                 <tr>
-                    <td><button class="bg-secondary">4</button></td>
-                    <td><button class="bg-secondary">5</button></td>
-                    <td><button class="bg-secondary">6</button></td>
-                    <td><button class="bg-secondary">x</button></td>
+                    <td><button value="4">4</button></td>
+                    <td><button value="5">5</button></td>
+                    <td><button value="6">6</button></td>
+                    <td><button value="*">x</button></td>
                 </tr>
                 <tr>
-                    <td><button class="bg-secondary">1</button></td>
-                    <td><button class="bg-secondary">2</button></td>
-                    <td><button class="bg-secondary">3</button></td>
-                    <td><button class="bg-secondary">-</button></td>
+                    <td><button value="1">1</button></td>
+                    <td><button value="2">2</button></td>
+                    <td><button value="3">3</button></td>
+                    <td><button value="-">-</button></td>
                 </tr>
                 <tr>
-                    <td><button class="bg-secondary">0</button></td>
-                    <td><button class="bg-secondary">.</button></td>
-                    <td><button class="bg-secondary">=</button></td>
-                    <td><button class="bg-secondary">+</button></td>
+                    <td><button value="0">0</button></td>
+                    <td><button value=".">.</button></td>
+                    <td><button value="=">=</button></td>
+                    <td><button value="+">+</button></td>
                 </tr>
             </tbody>
         </table>
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-        crossorigin="anonymous"></script>
+    <script src="./js/scripts.js"></script>
 </body>
 
 </html>
