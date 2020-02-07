@@ -1,4 +1,8 @@
-let btnLimpar = document.querySelectorAll("CE");
+let btnLimpar = document.querySelector('[value="CE"]');
+let visor = document.querySelector('input');
+btnLimpar.onclick = () => {
+    visor.value = ''
+}
 
 let btnZero = document.querySelectorAll("0");
 let btnUm = document.querySelectorAll("1");
@@ -15,7 +19,7 @@ let btnSoma = document.querySelectorAll("+");
 let btnSubtracao = document.querySelectorAll("-");
 let btnDivisao = document.querySelectorAll("/");
 let btnMultiplicacao = document.querySelectorAll("*");
-let btnigual = document.querySelectorAll("=");
+let btnIgual = document.querySelectorAll("=");
 
 
 const novaString = () =>{
